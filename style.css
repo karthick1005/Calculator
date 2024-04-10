@@ -1,0 +1,44 @@
+.calc{
+    /* background-color: aqua; */
+   
+}
+.calc form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    
+}
+.calc form div{
+    padding: 5px;
+    
+}
+.calc form .answer{
+    display: flex;
+    justify-content: flex-end;
+    /* margin: 20px; */
+    border: none;
+    /* background-color: black; */
+}
+.calc  form .answer input{
+    background-color: black;
+    text-align: right;
+    flex:1;
+    
+    /* direction: rtl; */
+    color: white;
+    font-size: 42px;
+    /* padding-left: 10px; */
+}
+.calc form .text input{
+    font-size: 28px;
+}
+.container{
+    background-color: black;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
