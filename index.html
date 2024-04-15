@@ -17,36 +17,36 @@
                 </div>
                 <div class="text">
                     <input type="button" value="AC" style="background-color: gray;color: black;" onclick="Display.value=''">
-                    <input type="button" value="+/-" style="background-color: gray; color: black;">
-                    <input type="button" value="%" style="background-color: gray; color: black;">
-                    <input type="button" value="÷" style="background-color: orange; color: white; font-size: 35px;">
+                    <input type="button" value="DE" style="background-color: gray; color: black;" onclick="Display.value=Display.value.slice(0,-1)">
+                    <input type="button" value="%" style="background-color: gray; color: black;"onclick="operator(Display.value,'%')changecolor(this)">
+                    <input type="button" value="÷" style="background-color: orange; color: white; font-size: 35px;"onclick="operator(Display.value,'/');changecolor(this)">
                 </div>
                 <div class="text">
-                    <input type="button" value="7" style="background-color: gray;color: white;" onclick="Display.value+='7'">
-                    <input type="button" value="8" style="background-color: gray; color: white;"onclick="Display.value+='8'">
-                    <input type="button" value="9" style="background-color: gray; color: white;"onclick="Display.value+='9'">
-                    <input type="button" value="x" style="background-color: orange; color: white;"onclick="Display.value+='x'">
+                    <input type="button"  value="7" style="background-color: gray;color: white;" onclick="setvalue(Display,7)">
+                    <input type="button"  value="8" style="background-color: gray; color: white;" onclick="setvalue(Display,8)">
+                    <input type="button" value="9" style="background-color: gray; color: white;" onclick="setvalue(Display,9)">
+                    <input type="button" value="x" style="background-color: orange; color: white;"onclick="operator(Display.value,'*');changecolor(this)">
                 </div>
                 <div class="text">
-                    <input type="button" value="4" style="background-color: gray;color: white;"onclick="Display.value+='4'">
-                    <input type="button" value="5" style="background-color: gray; color: white;"onclick="Display.value+='5'">
-                    <input type="button" value="6" style="background-color: gray; color: white;"onclick="Display.value+='6'">
-                    <input type="button" value="-" style="background-color: orange; color: white; "onclick="Display.value+='-'">
+                    <input type="button" value="4" style="background-color: gray;color: white;"onclick="setvalue(Display,4)">
+                    <input type="button" value="5" style="background-color: gray; color: white;"onclick="setvalue(Display,5)">
+                    <input type="button" value="6" style="background-color: gray; color: white;"onclick="setvalue(Display,6)">
+                    <input type="button" value="-" style="background-color: #ffa500; color: white; "onclick="operator(Display.value,'-');changecolor(this)">
                 </div>
                 <div class="text">
-                    <input type="button" value="1" style="background-color: gray;color: white;"onclick="Display.value+='1'">
-                    <input type="button" value="2" style="background-color: gray; color: white;"onclick="Display.value+='2'">
-                    <input type="button" value="3" style="background-color: gray; color: white;"onclick="Display.value+='3'">
-                    <input type="button" value="+" style="background-color: orange; color: white;"onclick="Display.value+='+'">
+                    <input type="button" value="1" style="background-color: gray;color: white;"onclick="setvalue(Display,1)">
+                    <input type="button" value="2" style="background-color: gray; color: white;"onclick="setvalue(Display,2)">
+                    <input type="button" value="3" style="background-color: gray; color: white;"onclick="setvalue(Display,3)">
+                    <input type="button" value="+" style="background-color: orange; color: white;"onclick="operator(Display.value,'+');changecolor(this)">
                 </div>
                 <div class="text">
-                    <input type="button" value="0" style="background-color: gray;color: white; inline-size: 125px; padding-right: 60px;"onclick="Display.value+='0'">
-                    <input type="button" value="." style="background-color: gray; color: white;">
-                    <input type="button" value="=" style="background-color: orange; color: white;">
+                    <input type="button" value="0" style="background-color: gray;color: white; inline-size: 125px; padding-right: 60px;"onclick="setvalue(Display,0)">
+                    <input type="button" value="." style="background-color: gray; color: white;"onclick="setvalue(Display,'.')">
+                    <input type="button" value="=" style="background-color: orange; color: white; "onclick="operation(Display)" >
                 </div>
             </form>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
-
 </html>
